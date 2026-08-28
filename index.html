@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>R Digital Flex | An initiative by R Digital Studio</title>
+<title>R Digital Flex | R Digital Studio</title>
+
+<meta name="description"
+content="R Digital Flex - Flex Printing, Digital Printing, Vinyl Printing, Sticker, Canvas, Backlit and Branding Services in Inayat Nagar, Ayodhya.">
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
 }
 
 html{
@@ -19,29 +22,38 @@ html{
 }
 
 body{
+    font-family:Arial, Helvetica, sans-serif;
     background:#f5f6fa;
     color:#222;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header{
-    background:linear-gradient(135deg,#d40000,#ff5e00);
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    background:#101820;
     color:white;
-    padding:25px 7%;
+
+    padding:18px 7%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
 }
 
 .logo h1{
-    font-size:32px;
+    font-size:31px;
+    color:#ffd000;
 }
 
 .logo p{
-    font-size:14px;
+    font-size:13px;
+    color:#ddd;
     margin-top:4px;
 }
 
@@ -50,231 +62,408 @@ nav a{
     text-decoration:none;
     margin-left:25px;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#ffe600;
+    color:#ffd000;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero{
-    min-height:600px;
+    min-height:650px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     text-align:center;
+
     padding:60px 20px;
+
     background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1600&q=80");
+    linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)),
+    url("printing-1.png");
+
     background-size:cover;
     background-position:center;
+
     color:white;
 }
 
+.hero-content{
+    max-width:900px;
+}
+
 .hero h2{
-    font-size:58px;
-    margin-bottom:15px;
+    font-size:65px;
+    color:#ffd000;
+    margin-bottom:12px;
 }
 
 .hero h3{
     font-size:25px;
-    color:#ffd400;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:700px;
-    margin:auto;
-    line-height:1.6;
+    font-size:21px;
+    line-height:1.7;
 }
 
 .buttons{
-    margin-top:30px;
+    margin-top:35px;
 }
 
 .btn{
     display:inline-block;
-    padding:15px 30px;
+
+    padding:15px 32px;
+
     margin:7px;
-    border-radius:7px;
+
+    border-radius:50px;
+
     text-decoration:none;
+
+    font-size:18px;
     font-weight:bold;
-    font-size:17px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .call{
-    background:#fff;
-    color:#d40000;
+    background:white;
+    color:#111;
 }
 
 .whatsapp{
-    background:#16c45b;
+    background:#18c964;
     color:white;
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
+
 section{
-    padding:70px 7%;
+    padding:75px 7%;
 }
 
 .title{
     text-align:center;
-    font-size:38px;
+
+    font-size:40px;
+
     margin-bottom:45px;
-    color:#d40000;
+
+    color:#101820;
 }
 
-/* ABOUT */
+.title span{
+    color:#e00000;
+}
+
+/* ================= ABOUT ================= */
+
 .about{
     background:white;
 }
 
-.about-box{
+.about-content{
     max-width:950px;
+
     margin:auto;
+
     text-align:center;
-    line-height:1.8;
-    font-size:18px;
+
+    font-size:19px;
+
+    line-height:1.9;
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
+
 .services{
     background:#f5f6fa;
 }
 
-.cards{
+.service-grid{
+    max-width:1100px;
+
+    margin:auto;
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
+
     gap:25px;
 }
 
-.card{
+.service{
     background:white;
-    padding:35px 25px;
+
+    padding:35px 28px;
+
+    border-radius:15px;
+
     text-align:center;
-    border-radius:12px;
+
     box-shadow:0 5px 20px rgba(0,0,0,.10);
+
+    border-top:5px solid #e00000;
+
     transition:.3s;
 }
 
-.card:hover{
+.service:hover{
     transform:translateY(-8px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
-.icon{
-    font-size:45px;
+.service .icon{
+    font-size:52px;
+
     margin-bottom:15px;
 }
 
-.card h3{
-    color:#d40000;
-    font-size:23px;
-    margin-bottom:12px;
+.service h3{
+    color:#e00000;
+
+    font-size:25px;
+
+    margin-bottom:18px;
 }
 
-.card p{
+.service ul{
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    text-align:left;
+}
+
+.service ul li{
+    padding:11px 5px;
+
+    border-bottom:1px solid #eee;
+
     color:#555;
-    line-height:1.6;
+
+    font-size:17px;
 }
 
-/* GALLERY */
+.service ul li::before{
+    content:"✓";
+
+    color:#e00000;
+
+    font-weight:bold;
+
+    margin-right:10px;
+}
+
+/* ================= GALLERY ================= */
+
 .gallery{
     background:white;
 }
 
 .gallery-grid{
+    max-width:1200px;
+
+    margin:auto;
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+
+    gap:22px;
 }
 
-.gallery-grid img{
+.gallery-item{
+    overflow:hidden;
+
+    border-radius:15px;
+
+    background:#eee;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.gallery-item img{
     width:100%;
-    height:230px;
+
+    height:320px;
+
     object-fit:cover;
-    border-radius:10px;
-    transition:.3s;
+
+    display:block;
+
+    transition:.5s;
 }
 
-.gallery-grid img:hover{
-    transform:scale(1.04);
+.gallery-item:hover img{
+    transform:scale(1.08);
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
+
 .contact{
-    background:#222;
+    background:#101820;
+
     color:white;
 }
 
-.contact-container{
-    max-width:1000px;
+.contact .title{
+    color:white;
+}
+
+.contact-box{
+    max-width:1100px;
+
     margin:auto;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:40px;
 }
 
+.contact-info{
+    padding:20px;
+}
+
 .contact-info h3{
-    color:#ffd400;
-    font-size:28px;
-    margin-bottom:20px;
+    color:#ffd000;
+
+    font-size:30px;
+
+    margin-bottom:25px;
 }
 
 .contact-info p{
-    margin:15px 0;
     font-size:18px;
-    line-height:1.6;
+
+    line-height:1.7;
+
+    margin:18px 0;
 }
 
 .contact-info a{
     color:white;
+
     text-decoration:none;
+}
+
+.contact-info a:hover{
+    color:#ffd000;
 }
 
 .map{
     width:100%;
-    min-height:300px;
+
+    height:350px;
+
     border:0;
-    border-radius:10px;
+
+    border-radius:15px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
-    background:#111;
-    color:white;
+    background:#080b0f;
+
+    color:#aaa;
+
     text-align:center;
+
     padding:25px 15px;
+
+    line-height:1.8;
 }
 
-footer span{
-    color:#ffcc00;
+footer strong{
+    color:#ffd000;
 }
 
-/* MOBILE */
-@media(max-width:800px){
+/* ================= FLOATING WHATSAPP ================= */
+
+.whatsapp-float{
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#18c964;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+    z-index:999;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
 
     header{
         flex-direction:column;
+
         gap:15px;
+
         text-align:center;
     }
 
     nav a{
-        margin:0 8px;
+        margin:5px 8px;
+
+        display:inline-block;
+
         font-size:14px;
     }
 
+    .hero{
+        min-height:560px;
+    }
+
     .hero h2{
-        font-size:38px;
+        font-size:43px;
     }
 
     .hero h3{
         font-size:20px;
     }
 
-    .cards{
+    .hero p{
+        font-size:17px;
+    }
+
+    .service-grid{
         grid-template-columns:1fr;
     }
 
@@ -282,56 +471,82 @@ footer span{
         grid-template-columns:1fr;
     }
 
-    .contact-container{
+    .gallery-item img{
+        height:280px;
+    }
+
+    .contact-box{
         grid-template-columns:1fr;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+
+<!-- ================= HEADER ================= -->
+
 <header>
 
 <div class="logo">
-    <h1>R Digital Flex</h1>
-    <p>An initiative by R Digital Studio</p>
+
+<h1>R Digital Flex</h1>
+
+<p>An initiative by R Digital Studio</p>
+
 </div>
 
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
 
 </header>
 
 
-<!-- HERO -->
+
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="home">
 
-<div>
+<div class="hero-content">
 
 <h2>R Digital Flex</h2>
 
 <h3>An initiative by R Digital Studio</h3>
 
 <p>
-Professional Flex Printing, Digital Printing,
-Banner Design & Printing Services in Ayodhya.
+Professional Flex Printing & Digital Printing
+Services in Inayat Nagar, Ayodhya.
 </p>
+
 
 <div class="buttons">
 
-<a class="btn call" href="tel:9453566950">
+<a
+class="btn call"
+href="tel:9453566950">
 📞 Call Now
 </a>
 
-<a class="btn whatsapp"
-href="https://wa.me/919453566950?text=Hello%20R%20Digital%20Flex,%20I%20want%20to%20know%20about%20your%20services.">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919453566950?text=Hello%20R%20Digital%20Flex,%20I%20want%20to%20know%20about%20your%20printing%20services."
+target="_blank">
 💬 WhatsApp
 </a>
 
@@ -342,27 +557,36 @@ href="https://wa.me/919453566950?text=Hello%20R%20Digital%20Flex,%20I%20want%20t
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- ================= ABOUT ================= -->
+
 <section class="about" id="about">
 
-<h2 class="title">About Us</h2>
+<h2 class="title">
+About <span>Us</span>
+</h2>
 
-<div class="about-box">
+
+<div class="about-content">
 
 <p>
-Welcome to <strong>R Digital Flex</strong>, an initiative by
-<strong>R Digital Studio</strong>.
+Welcome to <strong>R Digital Flex</strong>,
+an initiative by <strong>R Digital Studio</strong>.
 </p>
 
-<p>
-We provide quality printing and designing services for
-businesses, shops, schools, events, advertisements and
-personal requirements.
-</p>
+<br>
 
 <p>
-हमारे यहाँ आकर्षक एवं उच्च गुणवत्ता वाले Flex Banner,
-Digital Printing और Graphic Designing का कार्य किया जाता है।
+हमारे यहाँ उच्च गुणवत्ता वाले Flex Printing,
+Digital Printing, Vinyl Printing, Sticker,
+Canvas, Backlit और Branding का कार्य किया जाता है।
+</p>
+
+<br>
+
+<p>
+हमारा उद्देश्य बेहतर क्वालिटी, आकर्षक डिजाइन,
+उचित रेट और समय पर प्रिंटिंग सेवा उपलब्ध कराना है।
 </p>
 
 </div>
@@ -370,150 +594,244 @@ Digital Printing और Graphic Designing का कार्य किया �
 </section>
 
 
-<!-- SERVICES -->
+
+<!-- ================= SERVICES ================= -->
+
 <section class="services" id="services">
 
-<h2 class="title">Our Services</h2>
+<h2 class="title">
+Our <span>Services</span>
+</h2>
 
-<div class="cards">
 
-<div class="card">
+<div class="service-grid">
+
+
+<!-- FLEX PRINTING -->
+
+<div class="service">
+
 <div class="icon">🖨️</div>
+
 <h3>Flex Printing</h3>
-<p>
-High-quality flex printing for shops,
-businesses, events and advertisements.
-</p>
+
+<ul>
+
+<li>Star Flex</li>
+
+<li>Normal Flex</li>
+
+<li>Vinyl Printing</li>
+
+<li>Retro</li>
+
+<li>Canvas</li>
+
+<li>Backlit</li>
+
+</ul>
+
 </div>
 
-<div class="card">
+
+
+<!-- DIGITAL PRINTING -->
+
+<div class="service">
+
 <div class="icon">🎨</div>
-<h3>Banner Design</h3>
-<p>
-Creative and attractive banner designs
-for every occasion and business.
-</p>
+
+<h3>Digital Printing</h3>
+
+<ul>
+
+<li>Card Sheet</li>
+
+<li>Sticker</li>
+
+<li>Photo Printing</li>
+
+<li>Poster Printing</li>
+
+</ul>
+
 </div>
 
-<div class="card">
-<div class="icon">💳</div>
-<h3>Visiting Cards</h3>
-<p>
-Professional visiting card designing
-and printing services.
-</p>
+
+
+<!-- BRANDING -->
+
+<div class="service">
+
+<div class="icon">🍦</div>
+
+<h3>Branding</h3>
+
+<ul>
+
+<li>Ice Cream Branding</li>
+
+<li>Freezer Vinyl Printing</li>
+
+<li>Shop Branding</li>
+
+<li>Advertisement Branding</li>
+
+</ul>
+
 </div>
 
-<div class="card">
-<div class="icon">💌</div>
-<h3>Wedding Cards</h3>
-<p>
-Beautiful wedding invitation card
-designing and printing.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">📸</div>
-<h3>Photo Printing</h3>
-<p>
-Quality photo printing for personal
-and professional requirements.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">🖥️</div>
-<h3>Graphic Designing</h3>
-<p>
-Professional graphic designing for
-social media, advertisements and print.
-</p>
-</div>
 
 </div>
 
 </section>
 
 
-<!-- GALLERY -->
+
+<!-- ================= GALLERY ================= -->
+
 <section class="gallery" id="gallery">
 
-<h2 class="title">Our Gallery</h2>
+<h2 class="title">
+Our <span>Work Gallery</span>
+</h2>
+
 
 <div class="gallery-grid">
 
-<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=80">
 
-<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80">
+<div class="gallery-item">
 
-<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80">
+<img
+src="printing-1.png"
+alt="R Digital Flex Printing Work">
 
-<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80">
+</div>
 
-<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=900&q=80">
 
-<img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=900&q=80">
+<div class="gallery-item">
+
+<img
+src="printing-2.png"
+alt="R Digital Flex Printing Machine">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="printing-3.png"
+alt="R Digital Flex Printer">
+
+</div>
+
 
 </div>
 
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- ================= CONTACT ================= -->
+
 <section class="contact" id="contact">
 
-<h2 class="title" style="color:white;">Contact Us</h2>
+<h2 class="title">
+Contact <span>Us</span>
+</h2>
 
-<div class="contact-container">
+
+<div class="contact-box">
+
 
 <div class="contact-info">
 
 <h3>R Digital Flex</h3>
 
+
 <p>
-📍 <strong>Address:</strong><br>
+
+📍 <strong>Address</strong><br>
+
 NH330A, Inayat Nagar,<br>
+
 Ayodhya, Uttar Pradesh,<br>
+
 India – 224228
+
 </p>
 
+
 <p>
-📞 <strong>Mobile:</strong><br>
+
+📞 <strong>Mobile</strong><br>
+
 <a href="tel:9453566950">
+
 9453566950
+
 </a>
+
 </p>
 
+
 <p>
-💬 <strong>WhatsApp:</strong><br>
-<a href="https://wa.me/919453566950">
+
+💬 <strong>WhatsApp</strong><br>
+
+<a
+href="https://wa.me/919453566950"
+target="_blank">
+
 Chat With Us
+
 </a>
+
+</p>
+
+
+<p>
+
+📍 <strong>Location</strong><br>
+
+<a
+href="https://maps.app.goo.gl/VGgf5LXpWYQKxfyj9"
+target="_blank">
+
+Open Google Maps →
+
+</a>
+
 </p>
 
 </div>
+
+
 
 <div>
 
 <iframe
 class="map"
-src="https://www.google.com/maps?q=Inayat%20Nagar%20Ayodhya%20Uttar%20Pradesh%20224228&output=embed"
+src="https://www.google.com/maps?q=26.6200617,81.9406767&z=17&output=embed"
 loading="lazy">
 </iframe>
 
 </div>
+
 
 </div>
 
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
 <p>
-© 2026 <span>R Digital Flex</span>
+© 2026 <strong>R Digital Flex</strong>
 </p>
 
 <p>
@@ -525,6 +843,21 @@ NH330A, Inayat Nagar, Ayodhya, UP – 224228
 </p>
 
 </footer>
+
+
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+class="whatsapp-float"
+href="https://wa.me/919453566950?text=Hello%20R%20Digital%20Flex"
+target="_blank"
+title="Chat on WhatsApp">
+
+💬
+
+</a>
+
 
 </body>
 </html>
