@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>R Digital Flex | An initiative by R Digital Studio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f6fa;
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#d40000,#ff5e00);
+    color:white;
+    padding:25px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:14px;
+    margin-top:4px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffe600;
+}
+
+/* HERO */
+.hero{
+    min-height:600px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:58px;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    font-size:25px;
+    color:#ffd400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:7px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.call{
+    background:#fff;
+    color:#d40000;
+}
+
+.whatsapp{
+    background:#16c45b;
+    color:white;
+}
+
+/* SECTION */
+section{
+    padding:70px 7%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+    color:#d40000;
+}
+
+/* ABOUT */
+.about{
+    background:white;
+}
+
+.about-box{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* SERVICES */
+.services{
+    background:#f5f6fa;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#d40000;
+    font-size:23px;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* GALLERY */
+.gallery{
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.04);
+}
+
+/* CONTACT */
+.contact{
+    background:#222;
+    color:white;
+}
+
+.contact-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info h3{
+    color:#ffd400;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.contact-info a{
+    color:white;
+    text-decoration:none;
+}
+
+.map{
+    width:100%;
+    min-height:300px;
+    border:0;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+footer span{
+    color:#ffcc00;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    nav a{
+        margin:0 8px;
+        font-size:14px;
+    }
+
+    .hero h2{
+        font-size:38px;
+    }
+
+    .hero h3{
+        font-size:20px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="logo">
+    <h1>R Digital Flex</h1>
+    <p>An initiative by R Digital Studio</p>
+</div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div>
+
+<h2>R Digital Flex</h2>
+
+<h3>An initiative by R Digital Studio</h3>
+
+<p>
+Professional Flex Printing, Digital Printing,
+Banner Design & Printing Services in Ayodhya.
+</p>
+
+<div class="buttons">
+
+<a class="btn call" href="tel:9453566950">
+📞 Call Now
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/919453566950?text=Hello%20R%20Digital%20Flex,%20I%20want%20to%20know%20about%20your%20services.">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about-box">
+
+<p>
+Welcome to <strong>R Digital Flex</strong>, an initiative by
+<strong>R Digital Studio</strong>.
+</p>
+
+<p>
+We provide quality printing and designing services for
+businesses, shops, schools, events, advertisements and
+personal requirements.
+</p>
+
+<p>
+हमारे यहाँ आकर्षक एवं उच्च गुणवत्ता वाले Flex Banner,
+Digital Printing और Graphic Designing का कार्य किया जाता है।
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🖨️</div>
+<h3>Flex Printing</h3>
+<p>
+High-quality flex printing for shops,
+businesses, events and advertisements.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Banner Design</h3>
+<p>
+Creative and attractive banner designs
+for every occasion and business.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💳</div>
+<h3>Visiting Cards</h3>
+<p>
+Professional visiting card designing
+and printing services.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💌</div>
+<h3>Wedding Cards</h3>
+<p>
+Beautiful wedding invitation card
+designing and printing.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📸</div>
+<h3>Photo Printing</h3>
+<p>
+Quality photo printing for personal
+and professional requirements.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>Graphic Designing</h3>
+<p>
+Professional graphic designing for
+social media, advertisements and print.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+<h2 class="title">Our Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h2 class="title" style="color:white;">Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>R Digital Flex</h3>
+
+<p>
+📍 <strong>Address:</strong><br>
+NH330A, Inayat Nagar,<br>
+Ayodhya, Uttar Pradesh,<br>
+India – 224228
+</p>
+
+<p>
+📞 <strong>Mobile:</strong><br>
+<a href="tel:9453566950">
+9453566950
+</a>
+</p>
+
+<p>
+💬 <strong>WhatsApp:</strong><br>
+<a href="https://wa.me/919453566950">
+Chat With Us
+</a>
+</p>
+
+</div>
+
+<div>
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Inayat%20Nagar%20Ayodhya%20Uttar%20Pradesh%20224228&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+© 2026 <span>R Digital Flex</span>
+</p>
+
+<p>
+An initiative by R Digital Studio
+</p>
+
+<p>
+NH330A, Inayat Nagar, Ayodhya, UP – 224228
+</p>
+
+</footer>
+
+</body>
+</html>
